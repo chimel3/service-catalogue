@@ -1,8 +1,8 @@
 CSRF_ENABLED = True
-SECRET_KEY = 'WJzqptnDIw5behk2LdSs99qtzIGGLoxD956TAtNjXFgzw2eZZRuYYB3xGAxrvneXKYc3l4aOqhbawAkBEVte7w=='
+SECRET_KEY = 'xxxx'
 
 COSMOSDB_HOST = 'https://tm-cosmos-001.documents.azure.com:443/'
-COSMOSDB_KEY = 'WJzqptnDIw5behk2LdSs99qtzIGGLoxD956TAtNjXFgzw2eZZRuYYB3xGAxrvneXKYc3l4aOqhbawAkBEVte7w=='
+COSMOSDB_KEY = 'xxxx'
 
 COSMOSDB_DATABASE = 'service catalogue'
 COSMOSDB_COLLECTION_VM = 'virtualmachines'
