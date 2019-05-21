@@ -176,4 +176,4 @@ def firewall_rules():
 
 
 if __name__ == "__main__":
-    app.run(port=8080)
+    app.run(host='0.0.0.0', port=8080)   # ensures that it doesn't just bind on 127.0.0.1 which is the default
