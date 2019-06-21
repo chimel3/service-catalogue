@@ -1,0 +1,19 @@
+FROM centos:latest
+
+MAINTAINER Tim Mitchell
+
+RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum install -y python36u python36u-libs python36u-devel python36u-pip
+RUN yum update -y
+RUN mkdir /var/code
+RUN yum install git -y
+RUN git config --global user.name "Tim Mitchell"
+RUN git config --global user.email "tim_mitchell@outlook.com"
+
+WORKDIR /var/code/
+RUN git clone https://github.com/chimel3/service-catalogue.git
+RUN pip3.6 install -r ./service-catalogue/requirements.txt
+RUN pip3.6 install --upgrade pip
+
+EXPOSE 8080
+CMD python3.6 ./service-catalogue/main.py

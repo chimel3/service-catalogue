@@ -1,7 +1,7 @@
 CSRF_ENABLED = True
 SECRET_KEY = 'xxxx'
 
-COSMOSDB_HOST = 'https://tm-cosmos-001.documents.azure.com:443/'
+COSMOSDB_HOST = 'https://xxx:443/'
 COSMOSDB_KEY = 'xxxx'
 
 COSMOSDB_DATABASE = 'service catalogue'

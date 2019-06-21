@@ -1,0 +1,15 @@
+FROM python:3
+
+MAINTAINER Tim Mitchell
+
+RUN mkdir /var/code
+RUN apt install git -y
+RUN git config --global user.name "Tim Mitchell"
+RUN git config --global user.email "tim_mitchell@outlook.com"
+
+WORKDIR /var/code/
+RUN git clone https://github.com/chimel3/service-catalogue.git
+RUN pip install -r ./service-catalogue/requirements.txt
+
+EXPOSE 8080
+CMD python ./service-catalogue/main-stub.py

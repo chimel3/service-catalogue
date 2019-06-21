@@ -1,0 +1,16 @@
+[
+    {
+        "id": "fw-1",
+        "name": "internet to server-a",
+        "from": "0.0.0.0/0",
+        "to": "vm-1",
+        "action": "allow"
+    },
+    {
+        "id": "fw-2",
+        "name": "default rule",
+        "from": "0.0.0.0/0",
+        "to": "0.0.0.0/0",
+        "action": "deny"
+    }      
+]
